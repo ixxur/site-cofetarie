@@ -1,0 +1,117 @@
+body {
+    --padding-main: 10px;
+    --background-body: white;
+    --text-color: black;
+    --text-color-main: white;
+    --marime-text: 17px;
+    background-color: var(--background-body);
+    color: var(--text-color);
+    transition: all 0.2s linear;
+}
+
+body.dark{
+    
+    --background-body:black;
+    --text-color:white;
+
+}
+body.dark main{
+    background-color: var(--culoare-main);
+}
+header {
+    background-color: #8785A2;
+}
+
+main {
+    background-color: #FFE2E2;
+    margin-left: var(--padding-main);
+    margin-right: var(--padding-main);
+    font-size: var(--marime-text);
+}
+
+footer {
+    background-color: #FFC7C7;
+}
+
+#grid-pagina {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "z-despre-noi z-despre-noi z-despre-noi z-despre-noi"
+                        "z-orar z-orar z-calendar z-calendar"
+                        "z-orar z-orar z-anunturi z-anunturi"
+                        "z-lista-utilizatori z-statistici z-statistici z-server"
+                        "z-most-wanted  z-most-wanted z-most-wanted z-most-wanted";
+}
+
+#grid-pagina > * {
+    border: solid 0.1rem white;
+    margin: 0;
+    padding: 0.3rem;
+    padding-top: 0;
+}
+
+#despre-noi {
+    grid-area: z-despre-noi;
+}
+
+#orar {
+    grid-area: z-orar;
+}
+
+#calendar {
+    grid-area: z-calendar;
+}
+
+#anunturi{
+    grid-area: z-anunturi;
+}
+
+#lista-utilizatori {
+    grid-area: z-lista-utilizatori;
+}
+
+#statistici {
+    grid-area: z-statistici;
+}
+
+#server {
+    grid-area: z-server;
+}
+
+#most-wanted {
+    grid-area: z-most-wanted;
+}
+
+.taburi-iframe {
+    display: flex;
+}
+
+.taburi-iframe a {
+    border-top-left-radius: 15%;
+    display: block;
+    width: 170px;
+    height: 30px;
+    border: solid 3px purple;
+}
+
+/* de facut ceva cu poza asta ca nu se misca */
+.poza-prezentare figure{
+    position: relative;
+    left: 0;
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #grid-pagina {
+        display: block;
+    }
+    main {
+        font-size: 0.8rem;
+    }
+}

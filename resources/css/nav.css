@@ -1,0 +1,143 @@
+body {
+    --inaltime-meniu: 35px;
+    --latime-buton: 110px;
+    --culoare-meniu: rgb(37, 27, 55);
+    --latime-border: 1px;
+    --culoare-meniu-selectat: white;
+    --marime-text: 17px;
+  }
+  
+  ul.meniu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.meniu li a {
+    display: block;
+    height: 100%;
+  }
+
+  ul.meniu li:hover ul {
+    animation-name: animatie-submeniu;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    display: block;
+  }
+
+  ul.meniu > li {
+    height: var(--inaltime-meniu);
+    overflow: hidden;
+    line-height: var(--inaltime-meniu);
+    vertical-align: middle;
+    border: var(--latime-border) solid var(--culoare-meniu);
+    width: var(--latime-buton);
+    text-align: center;
+    font-size: var(--marime-text);
+    transition: font-size 0.5s linear;
+  }
+
+  ul.meniu > li:hover {
+    overflow: visible;
+    font-size: 1.2rem;
+  }
+
+  ul.meniu ul {
+    list-style: none;
+    z-index: 100;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: -1px;
+    transform: scale(0.5, 0);
+    transform-origin: 50% 0;
+    /* opacity: 0; */
+    display: none;
+  }
+
+  ul.meniu ul li {
+    /* border: var(--latime-border) solid var(--culoare-meniu); */
+    width: var(--latime-buton);
+    height: var(--inaltime-meniu);
+  }
+  
+  
+
+  ul.submeniu > li {
+    font-size: 0.8rem;
+  }
+
+  ul.submeniu > li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    width: 0.3rem;
+    height: var(--inaltime-meniu);
+    background-position: left right;
+    background-color: var(--culoare-meniu);
+    /* opacity: 1; */
+    transition: transform 1s;
+  }
+
+  ul.submeniu > li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.3rem;
+    height: var(--inaltime-meniu);
+    background-position: right;
+    justify-content: right;
+    background-color: var(--culoare-meniu);
+    opacity: 1;
+  }
+
+  ul.submeniu > li a:hover::before {
+    transform: translateY(-(var(--inaltime-meniu)));
+    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(37,27,55,1));
+  }
+
+  ul.submeniu > li a:hover::after {
+    transition: 0.5s ease-in-out;
+    background-image: linear-gradient(to left, rgba(255,255,255,1), rgba(37,27,55,1));
+  }
+  
+  ul.meniu a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--culoare-meniu);
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  @keyframes animatie-submeniu {
+    0% {
+      transform: scaleY(0);
+    }
+    50%{
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  nav {
+    height: var(--inaltime-meniu);
+    background-color: var(--culoare-meniu);
+    overflow: visible;
+    top: 0;
+    position: sticky;
+    width: 100vw;
+  }
+  
+  #hamburger, #ch-menu {
+    display: none;
+  }
+  
+  /*# sourceMappingURL=nav.css.map */
+  
