@@ -1,0 +1,12 @@
+video {
+    align-self: center;
+    width: 35vw;
+}
+
+::cue {
+    background: white;
+    /* font-style: normal;
+    background-clip: text;
+    -webkit-background-clip: text; */
+    color: #5A5A5A;
+  }

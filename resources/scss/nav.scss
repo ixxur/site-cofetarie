@@ -1,0 +1,195 @@
+body {
+    --inaltime-meniu: 35px;
+    --latime-buton: 110px;
+    --culoare-meniu: rgb(170, 25, 69);
+    --latime-border: 1px;
+    --culoare-meniu-selectat: white;
+    --marime-text: 15px;
+    --margine-main: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+  }
+  
+  ul.meniu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        a {
+            display: block;
+            height: 100%;
+            color: white;
+            text-decoration: none;
+            background-color: var(--culoare-meniu);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        &hover {
+            ul {
+                animation-name: animatie-submeniu;
+                animation-duration: 0.5s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                opacity: 1;
+                display: block;
+            }
+        }
+    }
+
+    >li {
+        height: var(--inaltime-meniu);
+        overflow: hidden;
+        line-height: var(--inaltime-meniu);
+        vertical-align: middle;
+        border: var(--latime-border) solid var(--culoare-meniu);
+        width: var(--latime-buton);
+        text-align: center;
+        font-size: var(--marime-text);
+        transition: font-size 0.5s linear;
+
+        &hover {
+            overflow: visible;
+            font-size: 1.2rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        z-index: 100;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        left: -2px;
+        right: 1px;
+        transform: scale(0.5, 0);
+        transform-origin: 50% 0;
+        /* opacity: 0; */
+        display: none;
+
+        li {
+            width: var(--latime-buton);
+            height: var(--inaltime-meniu);
+        }
+    }
+  }
+
+  nav {
+    height: var(--inaltime-meniu);
+    background-color: var(--culoare-meniu);
+    overflow: visible;
+    top: 0;
+    position: sticky;
+    width: 100vw;
+    justify-content: center;
+    margin-left: var(--margine-main);
+    margin-right: var(--margine-main);
+  }
+
+  ul.submeniu {
+    >li {
+        font-size: 0.8rem;
+
+        a {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                // animation-name: reverse-animatie-optiune-submeniu;
+                // animation-duration: 0.5s;
+                // animation-timing-function: linear;
+                // animation-iteration-count: 1;
+                // animation-fill-mode: backwards;
+                height: 0;
+                transition: all 1s linear;
+                width: 0.3rem;
+                background-color: var(--culoare-meniu);
+                opacity: 1;
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 0.35rem;
+                background-color: var(--culoare-meniu);
+                left: 95%;
+                opacity: 1;
+                height: 0;
+                transition: all 1s linear;
+            }
+
+            &:hover {
+                &::before {
+                    // animation-name: animatie-optiune-submeniu;
+                    // animation-duration: 0.5s;
+                    // animation-timing-function: linear;
+                    // animation-iteration-count: 1;
+                    // animation-fill-mode: forwards;
+                    height: var(--inaltime-meniu);
+                    background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(170, 25, 69,1));
+                }
+
+                &::before {
+                    // animation-name: animatie-optiune-submeniu;
+                    // animation-duration: 0.5s;
+                    // animation-timing-function: linear;
+                    // animation-iteration-count: 1;
+                    // animation-fill-mode: forwards;
+                    height: var(--inaltime-meniu);
+                    background-image: linear-gradient(to left, rgba(255,255,255,1), rgba(170, 25, 69,1));
+                }
+            }
+        }
+    }
+  } 
+  
+  @keyframes animatie-submeniu {
+    0% {
+      transform: scaleY(0);
+    }
+    50%{
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes animatie-optiune-submeniu {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: var(--inaltime-meniu);
+    }
+  }
+
+  @keyframes reverse-animatie-optiune-submeniu {
+    from {
+      height: var(--inaltime-meniu);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    ul.meniu span.text-acasa {
+      display: none;
+    }
+    ul.meniu > li {
+      font-size: 0.9rem;
+    }
+    ul.meniu > li:hover {
+      font-size: 1.1rem;
+    }
+  }
+  
+  #hamburger, #ch-menu {
+    display: none;
+  }
+  

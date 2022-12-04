@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta name="keywords" content="cofetarie, laborator de cofetarie, torturi, tort nunta, tort botez, tort copii, tort diplomat, prajituri, eclere, macaroons, patiserie, ciocolata, tort de ciocolata, vanilie, tort de vanilie, cofetaria ana state, cofetaria delice, aroma, cofetaria alice, amandina, candybar, prajitura cu fructe de padure, mousse de ciocolata, tarta cu fructe"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="Cofetăria cu cele mai bune torturi și prăjituri - direct la tine acasă sau la birou. Comandă torturile Sweet Spot Bakery, cu livrare rapidă în București și Ilfov! Personalizare produse. Gusturi rafinate."><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <title>Eroare 404</title>
+        <%- include("../partials/head.ejs") %>
+    </head>
+    <body>
+        <%- include("../partials/nav.ejs") %>
+        <main>
+            <h1 style="text-align: center;">
+                <%- locals.titlu %>
+            </h1>
+            <figure style="text-align: center;">
+                <picture>
+                    <img src="<%- locals.imagine %>" alt="eroare">
+                </picture>
+                <figcaption style="text-align:center; color:#4f4649">
+                    <h2>
+                        <%- locals.text %>
+                    </h2>
+                </figcaption>
+            </figure>
+        </main>
+        <%- include("../partials/footer.ejs")%> 
+    </body>
+</html>

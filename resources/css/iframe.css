@@ -1,0 +1,58 @@
+#taburi-iframe > .iframe-flex {
+    --culoare-iframe: #391306;
+    --culoare-tab: #DEB3AD;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+    right: 80px;
+  }
+
+  #taburi-iframe > .iframe-flex a {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+    background-color: var(--culoare-tab);
+    border: 1px solid var(--culoare-iframe);
+    box-shadow: inset 0px 4px 4px 1px var(--culoare-iframe), inset 0px 0px 7px 0px var(--culoare-iframe);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: 70px;
+    text-decoration: none;
+    padding-top: 3px;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+  }
+
+  #taburi-iframe > .iframe-flex a:hover {
+    transition: all 0.5s linear;
+    background-color: white;
+    color: var(--culoare-iframe);
+  }
+
+  #taburi-iframe  .binder {
+    position: relative;
+    padding-top: 0;
+    margin-top: 0;
+    top: -5px;
+    right: -60px;
+    border-top: 15px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 120px;
+    z-index: -1;
+  }
+
+  #taburi-iframe  iframe {
+    border-style: solid;
+    border-color: var(--culoare-iframe);
+    border-width: 0.8em;
+    z-index: 3;
+  }
+
+  #ifr {
+    display: block;
+  }

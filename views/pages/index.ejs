@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta name="keywords" content="cofetarie, laborator de cofetarie, torturi, tort nunta, tort botez, tort copii, tort diplomat, prajituri, eclere, macaroons, patiserie, ciocolata, tort de ciocolata, vanilie, tort de vanilie, cofetaria ana state, cofetaria delice, aroma, cofetaria alice, amandina, candybar, prajitura cu fructe de padure, mousse de ciocolata, tarta cu fructe"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="Cofetăria cu cele mai bune torturi și prăjituri - direct la tine acasă sau la birou. Comandă torturile Sweet Spot Bakery, cu livrare rapidă în București și Ilfov! Personalizare produse. Gusturi rafinate."><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <link rel="stylesheet" href="resources/css/video.css" />
+        <title>Sweet Spot Bakery</title>
+        <%- include("../partials/head.ejs") %>
+    </head>
+    <body>
+        <p id="watermark"></p>
+        <%- include("../partials/nav.ejs") %>
+        <main>
+            <div id="grid-pagina">
+                <section id="despre-noi">
+                    <h2 class="titlu-grid">The secret ingredient in baking is always love.</h2>
+                        <div id="poza-prezentare">
+                            <div class="poza-flex">
+                                <figure>
+                                    <picture>
+                                        <source srcset="resources/images/cake600.jpg" media="(max-width: 700px)"/>
+                                        <source srcset="resources/images/cake1200.jpg" media="(max-width: 1200px)"/>
+                                    <img src="resources/images/cake1900.jpg" alt="stea">
+                                    </picture>
+                                    <figcaption style="text-align: center; color: #663635;"><i>Aceasta imagine are scop de prezentare</i></figcaption>
+                                </figure>
+                                <p>
+                                    Sweet Spot Bakery s-a născut din dorința de a aduce un nou standard de calitate în domeniul <b>cofetăriei</b> și de a le reda clienților încrederea că există și <b>prăjituri</b> cu gust și <b>aromă</b>, de care nu poți să te mai saturi!
+                                </p>
+                            </div>
+                        </div>
+                </section>
+                <section id="orar">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-clock"><span>&nbsp;&nbsp;</span></i>orar</h2>
+                    <div class="container-tabel">
+                        <table id="tab-orar">
+                            <caption>Va asteptam pe la noi!</caption>
+                            <thead>
+                                <tr>
+                                    <th>Zi</th>
+                                    <th>Interval dimineata</th>
+                                    <th>Pauza de masa</th>
+                                    <th>Interval seară</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Luni</td>
+                                    <td>10-12</td>
+                                    <td>12-14</td>
+                                    <td>14-20</td>
+                                </tr>
+                                <tr>
+                                    <td>Marti</td>
+                                    <td>9-12</td>
+                                    <td>12-14</td>
+                                    <td>14-21</td>
+                                </tr>
+                                <tr>
+                                    <td>Miercuri</td>
+                                    <td>9-11</td>
+                                    <td>11-13</td>
+                                    <td>14-21</td>
+                                </tr>
+                                <tr>
+                                    <td>Joi</td>
+                                    <td>9-11</td>
+                                    <td>11-13</td>
+                                    <td>14-21</td>
+                                </tr>
+                                <tr>
+                                    <td>Vineri</td>
+                                    <td>9-12</td>
+                                    <td>12-14</td>
+                                    <td>14-19</td>
+                                </tr>
+                                <tr>
+                                    <td>Sambata</td>
+                                    <td>10-12</td>
+                                    <td>12-13</td>
+                                    <td>13-16</td>
+                                </tr>
+                                <tr>
+                                    <td>Duminica</td>
+                                    <td>10-14</td>
+                                    <td>inchis</td>
+                                    <td>inchis</td>
+                                </tr>
+                            </tbody>
+                            <tfoot id="table-footer">
+                                <tr>
+                                    <td colspan="4">Ne rezervam dreptul de a nu lucra in zilele libere legale.</td>
+                                </tr>
+                            </tfoot>
+                        </table> 
+                    </div>
+                </section>
+                <section id="calendar">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-calendar"><span>&nbsp;&nbsp;</span></i>calendar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </section>
+                <section id="anunturi">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-bullhorn"><span>&nbsp;&nbsp;</span></i>anunturi</h2>
+                    <p><a href="https://vivasportclub.ro/evenimente/concurs-de-prajituri/" target="_blank">Sustine-ne la concursul prajiturilor!</a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </section>
+                <section id="lista-utilizatori">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-user"><span>&nbsp;&nbsp;</span></i>utilizatori</h2>
+                    <p> IP-ul utilizatorului este <%= ip %>  </p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </section>
+                <section id="most-wanted">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"><span>&nbsp;&nbsp;</span></i>most wanted</h2>
+                    <strong>
+                        O selecție de produse de TOP!
+                    </strong>
+                    <p class="top-vandute-categorii">TORTURI</p>
+                    <p class="top-vandute-categorii">PRAJITURI</p>
+                    <p class="top-vandute-categorii">PATISERIE</p>
+                </section>
+                <section id="oferta">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-circle-exclamation"><span>&nbsp;&nbsp;</span></i>oferta lunii</h2>
+                    <details>
+                        <summary>Oferta 1</summary>
+                        <p>Vino la noi si alege un tort aniversar si vei beneficia de 15% reducere la torturile mai mari de 2kg si <s>15%</s> <ins>20%</ins> la torturile mai mari de 3kg!!!</p>
+                    </details>
+                    <details>
+                        <summary>Oferta 2</summary>
+                        <p>La orice platou de 1kg de miniprajituri comandate veti primi din partea casei un suc la 1.5l!!! </p>
+                    </details>
+                </section>
+                <section id="testimoniale">
+                    <h2 class="titlu-grid"><i class="fa-solid fa-comments"><span>&nbsp;&nbsp;</span></i>recenzii</h2>
+                    <p>
+                        Dulcegarii pentru toate gusturile. Momente de rasfat si indulciri placute. O <b>cofetarie</b> minunata cu mesteri priceputi. Felicitari pentru fiecare rasfat dulce oferit de voi! - <i>BIANCA</i> 
+                    </p>
+                    <p>
+                        Cu ocazia zilei mele de nastere am comandat pentru prima oara de la Sweet Spot Bakery cateva din platourile cu miniprajituri. S-au doveit a fi extraordinar de gustoase si colegii de la munca le-au laudat si m-au intrebat de unde sunt. Cu siguranta voi mai comanda. Recomand cu drag! - <i>ROXANA</i> 
+                    </p>
+                    <p>
+                        As dori sa va multumesc pentru <b>tortul de nunta</b> exceptional care ne-a infrumusetat nunta. Design-ul a fost elegant, produsul cu un gust pe masura, iar invitatii s-au bucurat de el. Va multumesc din suflet. Faceti o treaba excelenta! - <i>ANDREI</i> 
+                    </p>
+                    <p>
+                        Am facut comanda de 3 platouri cu <b>prajituri</b>, care au sosit la timp si foarte frumos aranjate. Au fost si foarte gustoase mai ales <b>tartele</b>, dar si celelalte. A fost o experienta foarte placuta si o recomand. - <i>VICTOR</i> 
+                    </p>
+                </section>
+                <%- include("../partials/galerie.ejs") %>
+            </div>
+            <!-- <hr> -->
+            <section id="taburi-iframe">
+                <h2 class="titlu-grid"><i class="fa-solid fa-cookie-bite"><span>&nbsp;&nbsp;</span></i>retete simple</h2>
+                <iframe id="ifr" name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/uWj6BC0IV-Q"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="iframe-flex">
+                    <span class="binder"></span>
+                    <span class="text">
+                        <a href="https://www.youtube.com/embed/FLd00Bx4tOk" target="ifr-video">
+                            Clatite
+                        </a>
+                    </span>
+                    <span class="binder"></span>
+                    <span class="text-tab">
+                        <a href="https://www.youtube.com/embed/qtlhdIfojmc" target="ifr-video">
+                            Tort
+                        </a>
+                    </span>
+                    <span class="binder"></span>
+                    <span class="text">
+                        <a href="https://www.youtube.com/embed/uWj6BC0IV-Q" target="ifr-video">
+                            Briose
+                        </a>
+                    </span>
+                </div>
+            </section>
+            <br/>
+            <br/>
+            <a href="https://www.allrecipes.com/thmb/Qr4gaBDK6mnfPGipzQW2nzKVKZA=/2000x2000/filters:no_upscale()/21014-Good-old-Fashioned-Pancakes-mfs_002-0e249c95678f446291ebc9408ae64c05.jpg" download>
+                <img style="height: 200px; width: 200px;" src="resources/images/unnamed.png" alt="click me!">
+            </a>
+            <br/>
+            <br/>
+            <section id="video-vtt">
+                <video poster="resources/images/giphy.gif" preload="metadata" controls>
+                    <source src="resources/videos/FoodPack1_18_Videvo.mov" type="video/mov">
+                    <source src="resources/videos/FoodPack1_18_Videvo.mp4" type="video/mp4">
+                    <track default src="resources/subs/sub_ro.vtt" kind="captions" srclang="ro" label="romana" />
+                    <track default src="resources/subs/sub_en.vtt" kind="captions" srclang="en" label="engleza" />
+                </video>
+            </section>
+            <section id="css-printare">
+                <p>Acesta este un proiect școlar!</p>
+            </section>
+        </main>
+        <%- include("../partials/footer.ejs")%> 
+    </body>
+</html>

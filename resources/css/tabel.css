@@ -1,0 +1,61 @@
+body {
+    --c1: #F5F4F4;
+    --c2: #EED6D3;
+    --culoare-text-inchis: #4f4649;
+    --culoare-text-deschis: #F9F1F0; 
+    --latime-border: 2px;
+    --marime-text: 17px;
+}
+
+table {
+    color: var(--culoare-text);
+    border: var(--latime-border) solid #663635;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 40vw;
+    caption-side: bottom;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--c1);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--c2);
+}
+
+thead th {
+    background-color: #663635;
+    color: var(--culoare-text-deschis);
+}
+
+#table-footer tr{
+    background-color: #663635;
+    color: var(--culoare-text-deschis);
+}
+
+table tr:hover {
+    background-color: #AA1945;
+    color: var(--culoare-text-deschis);
+    transition: all 0.5s ease;
+}
+
+table td:hover {
+    background-color: #F1CED4;
+    color: var(--culoare-text-inchis);
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 750px) {
+    .container-tabel {
+        overflow: auto;
+        max-width: 10rem;
+    }
+}
+    
+

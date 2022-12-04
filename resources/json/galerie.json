@@ -1,0 +1,60 @@
+{
+	"cale_galerie":"resources/images/gallery",
+	"imagini": [
+		{
+			"fisier":"briose-frisca.png",
+			"nume":"Briose cu frisca",
+			"descriere":"Brioșe",
+			"timp":"noapte"
+		},
+		{
+			"fisier":"clatite.png",
+			"nume":"Clatite",
+			"descriere":"Clătite cu dulceață",
+			"timp":"noapte"
+			
+		},
+		{
+			"fisier":"gogosi.png",
+			"nume":"Gogosi",
+			"descriere":"Gogoși glazurate",
+			"timp":"zi"
+		},
+		{
+			"fisier":"tort-scortisoara.png",
+			"nume":"Tort cu frisca",
+			"descriere":"Tort cu scorțisoară",
+			"timp":"noapte"
+		},
+		{
+			"fisier":"prajitura-ciocolata.png",
+			"nume":"Briose cu ciocolata",
+			"descriere":"Prăjitură cu ciocolată",
+			"timp":"zi"
+		},
+		{
+			"fisier":"tarta-afine.png",
+			"nume":"Tarta cu afine",
+			"descriere":"Tartă cu afine",
+			"timp":"noapte"
+		},
+		{
+			"fisier":"tort-trandafiri.png",
+			"nume":"Tort special",
+			"descriere":"Tort special",
+			"timp":"dimineata"
+		},
+		{
+			"fisier":"tort-trandafiri.png",
+			"nume":"Tort cu trandafiri",
+			"descriere":"Tort special",
+			"timp":"zi"
+		},
+		{
+			"fisier":"tort-trandafiri.png",
+			"nume":"Tort diplomat",
+			"descriere":"Tort special",
+			"timp":"noapte"
+		}
+	]
+}

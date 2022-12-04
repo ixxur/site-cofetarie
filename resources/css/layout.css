@@ -1,36 +1,58 @@
 body {
     --padding-main: 10px;
-    --background-body: white;
+    --background-body: #F9F1F0;
     --text-color: black;
-    --text-color-main: white;
-    --marime-text: 17px;
+    --text-color-main: #4f4649;
+    --marime-text: 19px;
     background-color: var(--background-body);
     color: var(--text-color);
     transition: all 0.2s linear;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 }
 
 body.dark{
-    
     --background-body:black;
     --text-color:white;
-
 }
+
 body.dark main{
     background-color: var(--culoare-main);
 }
+
 header {
-    background-color: #8785A2;
+    background-color: #300202;
+    color: white;
+    text-align: center;
+    margin-left: var(--padding-main);
+    margin-right: var(--padding-main);
+    font-family: 'Merienda One', cursive;
 }
 
 main {
-    background-color: #FFE2E2;
+    background-color: var(--background-body);
     margin-left: var(--padding-main);
     margin-right: var(--padding-main);
     font-size: var(--marime-text);
+    color: var(--text-color-main);
 }
 
 footer {
-    background-color: #FFC7C7;
+    background-color: #E1999F;
+    margin-left: var(--padding-main);
+    margin-right: var(--padding-main);
+}
+
+#despre-noi > h2 {
+    text-align: center;
+    font-family: 'Birthstone', cursive;
+    font-size: 2.3rem;
+
+}
+
+h2.titlu-grid {
+    padding-left: 3%;
+    font-family: 'Merienda One', cursive;
 }
 
 #grid-pagina {
@@ -39,8 +61,9 @@ footer {
     grid-template-areas: "z-despre-noi z-despre-noi z-despre-noi z-despre-noi"
                         "z-orar z-orar z-calendar z-calendar"
                         "z-orar z-orar z-anunturi z-anunturi"
-                        "z-lista-utilizatori z-statistici z-statistici z-server"
-                        "z-most-wanted  z-most-wanted z-most-wanted z-most-wanted";
+                        "z-lista-utilizatori z-most-wanted  z-most-wanted z-oferta"
+                        "z-testimoniale  z-testimoniale z-testimoniale z-testimoniale"
+                        "z-galerie-statica z-galerie-statica z-galerie-statica z-galerie-statica";
 }
 
 #grid-pagina > * {
@@ -70,35 +93,74 @@ footer {
     grid-area: z-lista-utilizatori;
 }
 
-#statistici {
-    grid-area: z-statistici;
-}
-
-#server {
-    grid-area: z-server;
-}
-
 #most-wanted {
     grid-area: z-most-wanted;
 }
 
-.taburi-iframe {
-    display: flex;
+#oferta {
+    grid-area: z-oferta;
 }
 
-.taburi-iframe a {
-    border-top-left-radius: 15%;
+#testimoniale {
+    grid-area: z-testimoniale
+}
+
+#galerie-statica {
+    grid-area: z-galerie-statica;
+}
+
+#poza-prezentare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poza-flex {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
+}
+
+.poza-flex img {
     display: block;
-    width: 170px;
-    height: 30px;
-    border: solid 3px purple;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 0;
+} 
+
+hr {
+    height: 1rem;
+    width: 25rem;
+    border: none;
+    /* border-top: 1rem dotted var(--background-body); */
+    background-color: #AA1945;
+    background-image: radial-gradient(var(--background-body),rgba(170,25,69,0));
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px -3px 10px 14px rgba(170,25,69,1);
+    
 }
 
-/* de facut ceva cu poza asta ca nu se misca */
-.poza-prezentare figure{
-    position: relative;
-    left: 0;
-    display: flex;
+/* hr::before {
+    content: 'oooooooooooooooooooooo';
+    display: block; 
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 2px;
+    
+  } */
+
+
+footer {
+    text-align: center;
+}
+
+#watermark, #banner{
+    display:none;
 }
 
 @media screen and (max-width: 1200px) {

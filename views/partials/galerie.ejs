@@ -1,0 +1,40 @@
+<section id="galerie-statica">
+    <h2 class="titlu-grid">
+        <i class="fa-solid fa-image"><span>&nbsp;&nbsp;</span></i>galerie
+    </h2>
+    <div id="grid-galerie">
+        <% for (let imag of locals.imagini) { 
+            var d = new Date().getHours(); 
+
+            if (imag.timp){ if (d >= 5 && d < 12 && imag.timp =="dimineata") { %>
+                <figure>
+                    <picture>
+                        <source srcset=" <%- imag.fisier_mediu %> " media="max-width:1200px" />
+                        <source srcset=" <%- imag.fisier_mic %> " media="max-width:750px" />    
+                        <img src="<%- imag.fisier %>" alt="<%- imag.descriere %>" />
+                    </picture>
+                    <figcaption><%- imag.descriere %></figcaption>
+                </figure>
+            <% } else if (d >= 12 && d < 20 && imag.timp == "zi") { %>  
+                    <figure>
+                        <picture>
+                            <source srcset=" <%- imag.fisier_mediu %> " media="max-width:1200px" />
+                            <source srcset=" <%- imag.fisier_mic %> " media="max-width:750px" />    
+                            <img src="<%- imag.fisier %>" alt="<%- imag.descriere %>" />
+                        </picture>
+                        <figcaption><%- imag.descriere %></figcaption>
+                    </figure>
+            <% } else if ((d >= 20 || d < 5) && imag.timp == "noapte") { %>
+                    <figure>
+                        <picture>
+                            <source srcset=" <%- imag.fisier_mediu %> " media="max-width:1200px" />
+                            <source srcset=" <%- imag.fisier_mic %> " media="max-width:750px" />    
+                            <img src="<%- imag.fisier %>" title="<%- imag.nume %>" alt="<%- imag.descriere %>" />
+                        </picture>
+                        <figcaption><%- imag.descriere %></figcaption>
+                    </figure>
+            <% } %> 
+        <% } %>
+    <% } %>
+    </div>
+</section>

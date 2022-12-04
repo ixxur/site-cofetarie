@@ -1,0 +1,40 @@
+#hamburger {
+    display: block;
+    height: var(--inaltime-meniu);
+}
+
+#hamburger img {
+    height: 100%;
+    width: auto;
+}
+
+ul.meniu {
+    display: none;
+    animation-name: animatie-meniu;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform-origin: 0% 0%;
+}
+
+#ch-menu:checked~ul.meniu {
+    display: block;
+}
+
+ul.meniu li {
+    width: 100% !important;
+}
+
+ul.meniu ul {
+    width: 100%;
+}
+
+@keyframes animatie-meniu {
+    0%{
+        transform:scaleX(0)
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
