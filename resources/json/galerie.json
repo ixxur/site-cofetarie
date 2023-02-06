@@ -2,59 +2,113 @@
 	"cale_galerie":"resources/images/gallery",
 	"imagini": [
 		{
-			"fisier":"briose-frisca.png",
-			"nume":"Briose cu frisca",
-			"descriere":"Brioșe",
-			"timp":"noapte"
+			"fisier":"cupcake-orange.png",
+			"nume":"Briose cu morcovi",
+			"descriere":"Briose cu crema de morcovi",
+			"timp":"zi"
 		},
 		{
-			"fisier":"clatite.png",
-			"nume":"Clatite",
-			"descriere":"Clătite cu dulceață",
-			"timp":"noapte"
+			"fisier":"cake-choco-rasp.png",
+			"nume":"Tort cu ciocolata",
+			"descriere":"Tort cu ciocolata si zmeura",
+			"timp":"dimineata"
 			
 		},
 		{
-			"fisier":"gogosi.png",
-			"nume":"Gogosi",
-			"descriere":"Gogoși glazurate",
+			"fisier":"choco-cake.png",
+			"nume":"Tort cu crema de ciocolata",
+			"descriere":"Tort cu crema de ciocolata si capsuni",
 			"timp":"zi"
 		},
 		{
-			"fisier":"tort-scortisoara.png",
-			"nume":"Tort cu frisca",
-			"descriere":"Tort cu scorțisoară",
+			"fisier":"choco-cookies.png",
+			"nume":"Cookies cu ciocolata",
+			"descriere":"Cookies cu ciocolata crunchy",
 			"timp":"noapte"
 		},
 		{
-			"fisier":"prajitura-ciocolata.png",
-			"nume":"Briose cu ciocolata",
-			"descriere":"Prăjitură cu ciocolată",
+			"fisier":"cookies.png",
+			"nume":"Vanilla cookies",
+			"descriere":"Cookies blonde",
 			"timp":"zi"
+		},
+		{
+			"fisier":"crazy-cake.jpg",
+			"nume":"Tort crazy",
+			"descriere":"Tort verde cu capsuni",
+			"timp":"noapte"
+		},
+		{
+			"fisier":"cupcake-blue.png",
+			"nume":"Briose albastre",
+			"descriere":"Briose cu glazura albastra",
+			"timp":"dimineata"
+		},
+		{
+			"fisier":"Birthday_cake.png",
+			"nume":"Tort cu trandafiri",
+			"descriere":"Tort cu capsuni (CC BY 2.0)",
+			"timp":"zi"
+		},
+		{
+			"fisier":"cupcake-pink.png",
+			"nume":"Briose roz",
+			"descriere":"Briose cu glazura roz",
+			"timp":"dimineata"
+		},
+		{
+			"fisier":"forest-mousse.png",
+			"nume":"Tort din fructe de padure",
+			"descriere":"Tort special",
+			"timp":"noapte"
+		},
+		{
+			"fisier":"lava-cake.png",
+			"nume":"Lava cake",
+			"descriere":"Lava cake cu inghetata de vanilie",
+			"timp":"dimineata"
+		},
+		{
+			"fisier":"orange-cake.png",
+			"nume":"Prajitura cu portocale",
+			"descriere":"Prajitura cu portocale",
+			"timp":"dimineata"
+		},
+		{
+			"fisier":"pancakes.png",
+			"nume":"Clatite cu frisca",
+			"descriere":"Clatite simple",
+			"timp":"zi"
+		},
+		{
+			"fisier":"pancakes-strawberry.png",
+			"nume":"Clatite roz",
+			"descriere":"Clatite cu capsuni",
+			"timp":"noapte"
+		},
+		{
+			"fisier":"red-tarte.png",
+			"nume":"Tarta cu coacaze",
+			"descriere":"Tarta cu fructe rosii",
+			"timp":"dimineata"
 		},
 		{
 			"fisier":"tarta-afine.png",
 			"nume":"Tarta cu afine",
-			"descriere":"Tartă cu afine",
-			"timp":"noapte"
-		},
-		{
-			"fisier":"tort-trandafiri.png",
-			"nume":"Tort special",
-			"descriere":"Tort special",
-			"timp":"dimineata"
-		},
-		{
-			"fisier":"tort-trandafiri.png",
-			"nume":"Tort cu trandafiri",
-			"descriere":"Tort special",
+			"descriere":"Tarta cu afine",
 			"timp":"zi"
 		},
 		{
-			"fisier":"tort-trandafiri.png",
-			"nume":"Tort diplomat",
+			"fisier":"tort-macaroons.png",
+			"nume":"Tarta cu macaroons",
 			"descriere":"Tort special",
 			"timp":"noapte"
+		},
+		{
+			"fisier":"donuts.png",
+			"nume":"Gogosi glazurate",
+			"descriere":"Gogosi de la care faci diabet",
+			"timp":"dimineata"
 		}
 	]
 }

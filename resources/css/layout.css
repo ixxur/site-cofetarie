@@ -64,6 +64,7 @@ h2.titlu-grid {
                         "z-lista-utilizatori z-most-wanted  z-most-wanted z-oferta"
                         "z-testimoniale  z-testimoniale z-testimoniale z-testimoniale"
                         "z-galerie-statica z-galerie-statica z-galerie-statica z-galerie-statica";
+
 }
 
 #grid-pagina > * {
@@ -131,29 +132,55 @@ h2.titlu-grid {
 } 
 
 hr {
-    height: 1rem;
-    width: 25rem;
-    border: none;
-    /* border-top: 1rem dotted var(--background-body); */
+    height: 0.7rem;
+    width: 24.5rem;
+    box-shadow: inset 0px 0px 2px -14px rgba(170,25,69,1);
     background-color: #AA1945;
-    background-image: radial-gradient(var(--background-body),rgba(170,25,69,0));
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 2px -3px 10px 14px rgba(170,25,69,1);
-    
+    background-image: radial-gradient(circle, white 60%, transparent);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 0.7rem 0.7rem, cover;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-/* hr::before {
-    content: 'oooooooooooooooooooooo';
-    display: block; 
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    letter-spacing: 2px;
-    
-  } */
+hr::after {
+    content: "";
+    background: url("../images/sweet-cupcake-removebg-preview.png") no-repeat; 
+    background-size: contain;
+    margin-left: 177px;
+    margin-right: auto;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 100;
+    margin-top: -5px;
+  }
 
+#css-printare > div {
+    padding-top: 1.5rem;
+    padding-bottom: 1.9rem;
+    font-weight: bold;
+}
+#css-printare > div:before {
+    content: "Acesta este un proiect școlar!";
+    position: absolute;
+    transform-origin: bottom;
+    height: 1.6rem;
+    left: 10px;
+    transform: rotatex(180deg) translatey(15px) skew(135deg);
+    background: linear-gradient(0deg, var(--text-color-main)0, var(--text-color-main)100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity:0.7;
+    filter: blur(1px);
+} 
+
+#css-printare > div:hover:before {
+    font-size: 1.1rem;
+    transition: all 0.5s linear;
+}
 
 footer {
     text-align: center;
@@ -161,6 +188,39 @@ footer {
 
 #watermark, #banner{
     display:none;
+}
+
+#duotone > div {
+    margin-top: 2rem;
+    position:relative;
+	background-image:url("https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	background-size:cover;
+	width:400px; 
+	height: 270px;
+    transition: 1.6s linear;
+}
+
+#duotone > div:after, #duotone > div:before{
+	content:" ";
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+#duotone > div:after{
+	background-color:rgb(0,0,255);
+	mix-blend-mode:lighten;
+}
+
+#duotone > div:before{
+	background-color:rgb(205,0,255);
+	mix-blend-mode:darken;
+}
+
+#duotone > div:hover{
+    filter: grayscale(1);
 }
 
 @media screen and (max-width: 1200px) {

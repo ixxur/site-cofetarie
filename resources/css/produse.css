@@ -1,0 +1,135 @@
+body {
+    --padding-main: 10px;
+    --background-body: #F9F1F0;
+    --text-color: black;
+    --text-color-main: #4f4649;
+    --marime-text: 19px;
+    background-color: var(--background-body);
+    color: var(--text-color);
+    transition: all 0.2s linear;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+main {
+    background-color: var(--background-body);
+    margin-left: var(--padding-main);
+    margin-right: var(--padding-main);
+    font-size: var(--marime-text);
+    color: var(--text-color-main);
+}
+
+h2 {
+    padding-left: 3%;
+    font-family: 'Merienda One', cursive;
+}
+.grid-filtrare {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "z-filtre z-butoane";
+}
+
+.grid-filtrare > * {
+    margin: 0;
+    padding: 0.6rem;
+    padding-top: 0;
+}
+
+#optiuni-filtre {
+    grid-area: z-filtre;
+    font-weight: bold;
+}
+
+#butoane-filtre {
+    grid-area: z-butoane;
+}
+
+.optiuni-filtre > label {
+    font-weight: bolder;
+}
+
+.sub-categorie {
+    font-weight: lighter;
+}
+
+.grid-produse{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-produse > * {
+    border: solid 0.2rem white;
+    margin: 0;
+    padding: 0.3rem;
+    padding-top: 0;
+    font-size: var(--marime-text);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.produs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "z-nume z-nume"
+                        "z-imagine z-extra"
+                        "z-info    z-extra";
+}
+
+#test-mesaj{
+    display: none;
+    text-align: center;
+}
+.nume {
+    grid-area: z-nume;
+}
+
+figure {
+    grid-area: z-imagine;
+}
+
+#info-prod {
+    grid-area: z-info;
+}
+
+#extra {
+    grid-area: z-extra;
+}
+
+.grid-produse  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 3%;
+    font-family: 'Merienda One', cursive;
+    text-decoration: none;
+    color: var(--text-color-main); 
+}
+
+.val-nume-a {
+    text-decoration: none;
+    color: var(--text-color-main);
+}
+
+.val-prod {
+    font-weight: lighter;
+    color: var(--text-color-main);
+}
+
+.nume-filtru {
+    font-weight: bolder;
+}
+
+
+/* eliminare text din etapa 6 bootstrap */
+@media screen and (max-width: 1200px) {
+    body #btn-prod-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    body #btn-prod-text {
+        display: none;
+    }
+}

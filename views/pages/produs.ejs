@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="keywords" content="cofetarie, laborator de cofetarie, torturi, tort nunta, tort botez, tort copii, tort diplomat, prajituri, eclere, macaroons, patiserie, ciocolata, tort de ciocolata, vanilie, tort de vanilie, cofetaria ana state, cofetaria delice, aroma, cofetaria alice, amandina, candybar, prajitura cu fructe de padure, mousse de ciocolata, tarta cu fructe"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="Cofetăria cu cele mai bune torturi și prăjituri - direct la tine acasă sau la birou. Comandă torturile Sweet Spot Bakery, cu livrare rapidă în București și Ilfov! Personalizare produse. Gusturi rafinate."><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <link rel="stylesheet" href="resources/css/video.css" />
+        <title>Sweet Spot Bakery</title>
+        <%- include("../partials/head.ejs") %>
+    </head>
+    <body>
+        <p id="watermark"></p>
+        <%- include("../partials/nav.ejs") %>
+        <main>
+            <section>
+                <h2>Pagină produs</h2>
+                    <article id="art-produs">
+                        <h3><span class="nume"><%- locals.prod.nume %></span></h3>
+                        <p>Pret: <span class="pret"><%- locals.prod.pret %> </span></p>
+                        <p>Descriere: <span class="descriere"><%- locals.prod.descriere %> </span></p>
+                        <p>Ingrediente: <span class="ingrediente"><%- locals.prod.ingrediente %> </span></p>
+                        <p>Calorii: <span class="calorii"><%- locals.prod.calorii %> </span></p>
+                        <p>Gramaj: <span class="gramaj"><%- locals.prod.gramaj %> </span></p>
+                        <p>Categorie: <span class="categorie"><%- locals.prod.categorie %> </span></p>
+                        <p>Pentru diabetici: <span class="pt_diabetici"><%- locals.prod.pt_diabetici %> </span></p>
+                        <p>Data adăugare: <span class="categorie"><%- locals.prod.data_adaugare %> </span></p>
+                        <figure class="imag-produs">
+                            <img  src="/resources/images/produse/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+                        </figure>    
+                    </article>
+                
+            </section>
+        </main>
+        <%- include("../partials/footer") %>
+    </body>
+</html>
